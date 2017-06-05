@@ -1,0 +1,21 @@
+/* CSS RESET */
+@import "partials/reset";
+/* CSS RESET END */
+
+/* Weather icons */
+@import "weather-icons/weather-icons";
+/* CSS RESET END */
+
+@import "modules/variables";
+@import "modules/colors";
+/* FONT FACE */
+@import "modules/fonts";
+/* FONT FACE END*/
+@import "modules/mixins";
+
+@import "partials/header";
+@import "partials/base";
+@import "partials/footer";
+@import "partials/media-queries";
+
+@import "partials/grid";

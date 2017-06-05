@@ -1,0 +1,24 @@
+/* ========== MAIN SECTION ========== */
+
+.weather{
+	background-color: #16A1A4;
+	min-height: 200px;
+}
+
+
+button{
+	@include font-family($openSans, 1.6rem, #000000, 2.5rem, 300);
+	letter-spacing: 1px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #538135;
+	border: 1px solid #1e8200;
+	margin-top: 20px;
+	transition: all 0.2s linear;
+	&:hover, &:focus{
+		background-color: rgba(204,204,204,.6);
+		color: #000000;
+		outline: 2px solid #1e8200;
+	}
+}

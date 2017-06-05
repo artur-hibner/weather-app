@@ -1,0 +1,29 @@
+/* ========== FOOTER SECTION ========== */
+
+.page-footer{
+     @include font-family($openSans, 1.2rem, #595959, 2.5rem, 300);
+	background-color: #171717;
+	vertical-align: center;
+	text-align: center;
+	& .wrapper{
+		height: 60px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	a{
+		text-decoration: none;
+		color: inherit;
+		transition: all 0.2s linear;
+		&:hover{
+			padding-bottom: 3px;
+			border-bottom: 2px solid #1e8200;
+			color: #1e8200;
+		}
+		&:focus{
+			outline: 2px solid #1e8200;
+		}
+	}
+}
