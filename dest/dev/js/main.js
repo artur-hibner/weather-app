@@ -23,12 +23,12 @@ function getWeather(){
                 getDescription = showDescription(data),
                 getIcon = weatherIcon(data);
             
+            $("#temp").html(getTemp);
+            $("#icon").html(getIcon);
+            $("#description").html(getDescription);
             $("#userCityName").html(getCity);
-            $("#userCityName").append(getTemp);
-            $("#userCityName").append(getHumidity);
-            $("#userCityName").append(getWindSpeed);
-            $("#userCityName").append(getDescription);
-            $("#userCityName").append(getIcon);
+            $("#humidity").html(getHumidity);
+            $("#wind").html(getWindSpeed);
         }
     });
     
@@ -46,23 +46,23 @@ function showCity(data){
 }
 
 function showTemp(data){
-  var temp = data.main.temp;
-  return "<p><i class='wi wi-thermometer'></i> " + temp + " &#8451;</p>";
+  var temp = Math.round(data.main.temp);
+  return "<p><span class='wi wi-thermometer'></span> " + temp + "<span class='wi wi-celsius'></span></p>";
 }
 
 function showHumidity(data){
   var humidity = data.main.humidity;
-  return "<p><i class='wi wi-humidity'></i> " + humidity + " &percnt;</p>";
+  return "<p><span class='wi wi-humidity'></span> " + humidity + " &percnt;</p>";
 }
 
 function showWindSpeed(data){
   var windSpeed = data.wind.speed;
-  return "<p><i class='wi wi-strong-wind'></i> " + windSpeed + " m/s</p>";
+  return "<p><span class='wi wi-strong-wind'></span> " + windSpeed + " m/s</p>";
 }
 
 function showDescription(data){
   var description = data.weather[0].description;
-  return "<p><i class='wi wi-storm-warning'></i> " + description + " || " + data.weather[0].id + "</p>";
+  return "<p>" + description + "</p>";
 }
 
 function weatherIcon(data){
@@ -141,6 +141,6 @@ function weatherIcon(data){
               console.log("kiedy wreszcie będzie weekend?!");
           }
       }
-              return("<p><i class='wi wi-" + icon + "'></i></p>");
+              return("<p><span class='wi wi-" + icon + "'></span></p>");
 }
 //# sourceMappingURL=main.js.map

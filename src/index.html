@@ -9,31 +9,37 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
+		<link href="https://fonts.googleapis.com/css?family=Rancho|Kameron" rel="stylesheet">
+
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body id="main">
 		<!--  ========== Section HEADER ========== -->
 		
-		<main>
-		<!--  ========== Section MAIN ========== -->
-			
-			 <input type="text" name="city" id="userCity" placeholder="Enter city name" >
-  
-  <button id="submitCity">Search City</button>
-
-
-  		<header>
+  		<header class="header">
   			<h1>Weather for Your City</h1>
   		</header>
-  		<main>
+
+		<!--  ========== Section MAIN ========== -->
+
+
+  		<main class="main wrapper">
+			<section class="userCity">
+			 	<input type="text" name="city" id="userCity" class="userCity__input" placeholder="Enter city name" >
+			 	<button id="submitCity" class="userCity__button">Search City</button>
+			</section>
   			<section id="weather" class="weather">
+  				<div id="temp" class="weather__temp"></div>
   				<dvi id="icon" class="weather__icon"></dvi>
   				<div id="description" class="weather__description"></div>
   				<div id="userCityName" class="weather__city"></div>
   			</section>
+  			<section class="weather-add">
+  				<div id="humidity" class="weather__humidity"></div>
+  				<div id="wind" class="weather__wind"></div>
+  			</section>
   		</main>
 
-		</main>
 		<!--  ========== Section FOOTER ========== -->
 		<footer class="page-footer">
 			<div class="wrapper">

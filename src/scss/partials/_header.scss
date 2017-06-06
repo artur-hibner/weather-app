@@ -2,12 +2,12 @@
 
 html{
 	font-size: 62.5%;
-	color: #000000;
+	color: #FFFFFF;
 	height:100%;
 	box-sizing: border-box;
 }
 body{
-	background-color: #FFFFFF;
+    background: #dadcdf;
 }
 
 *, *:before, *:after {
@@ -15,11 +15,8 @@ body{
 }
 
 .wrapper{
-	max-width: 1038px;
+	max-width: 600px;
 	margin: 0 auto;
-}
-i, p{
-    font-size: 3rem;
 }
 
 .visuallyhidden {
@@ -35,3 +32,9 @@ i, p{
     white-space: nowrap;
 }
 
+.header{
+    @include font-family($rancho, 5rem, #16A1A4, 5rem, 400);
+    text-align: center;
+    padding: 40px;
+
+}

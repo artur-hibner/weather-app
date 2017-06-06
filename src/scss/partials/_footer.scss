@@ -3,8 +3,11 @@
 .page-footer{
      @include font-family($openSans, 1.2rem, #595959, 2.5rem, 300);
 	background-color: #171717;
-	vertical-align: center;
-	text-align: center;
+	// vertical-align: center;
+	// text-align: center;
+	position: absolute; 
+	bottom: 0;
+	width: 100%;
 	& .wrapper{
 		height: 60px;
 		display: flex;
