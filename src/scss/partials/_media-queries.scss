@@ -9,11 +9,42 @@
 }
 
 @media screen and (max-width: 640px){
+
+	html{
+		font-size: 50%;
+	}
+	.header{
+	    @include font-family($rancho, 3rem, #3A434C, 3rem, 400);
+	    text-align: center;
+	    padding: 10px 0 20px 0;
+	}
+	.weather{
+		&__humidity, &__wind{
+	    	@include font-family($kameron, 3rem, #FFFFFF, 3rem, 400);
+			p{
+				padding: 30px 0;
+			}
+		}
+		&__temp{
+			font-size: 3rem;
+		}
+		&__icon{
+			font-size: 8rem;
+			p{
+				padding: 20px;	
+			}
+		}
+		&__city{
+			p{
+				padding-bottom: 20px;
+			}
+		}
+	}
 	
 }
 
 @media screen and (max-width: 480px){
-	
+
 }
 
 @media screen and (max-width: 320px) {

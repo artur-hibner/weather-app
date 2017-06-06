@@ -2508,20 +2508,6 @@ body {
   margin: 0 auto;
 }
 
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-}
-
 .header {
   font-family: "Rancho", cursive;
   font-size: 5rem;
@@ -2756,5 +2742,41 @@ body {
 }
 
 /* ========== MEDIA QUERIES ========== */
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    font-family: "Rancho", cursive;
+    font-size: 3rem;
+    color: #3A434C;
+    line-height: 3rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0 20px 0;
+  }
+  .weather__humidity, .weather__wind {
+    font-family: "Kameron", serif;
+    font-size: 3rem;
+    color: #FFFFFF;
+    line-height: 3rem;
+    font-weight: 400;
+  }
+  .weather__humidity p, .weather__wind p {
+    padding: 30px 0;
+  }
+  .weather__temp {
+    font-size: 3rem;
+  }
+  .weather__icon {
+    font-size: 8rem;
+  }
+  .weather__icon p {
+    padding: 20px;
+  }
+  .weather__city p {
+    padding-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

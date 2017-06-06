@@ -19,22 +19,8 @@ body{
 	margin: 0 auto;
 }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
-}
-
 .header{
     @include font-family($rancho, 5rem, #3A434C, 5rem, 400);
     text-align: center;
     padding: 40px 0 20px 0;
-
 }
