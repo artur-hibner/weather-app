@@ -47,7 +47,7 @@ function showCity(data){
 
 function showTemp(data){
   var temp = Math.round(data.main.temp);
-  return "<p><span class='wi wi-thermometer'></span> " + temp + "<span class='wi wi-celsius'></span></p>";
+  return "<p class='weather__temp'><span class='wi wi-thermometer'></span> " + temp + "<span class='wi wi-celsius'></span></p>";
 }
 
 function showHumidity(data){

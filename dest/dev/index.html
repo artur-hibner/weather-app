@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Weather App</title>
 
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-		<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-
-		<link href="https://fonts.googleapis.com/css?family=Rancho|Kameron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rancho|Kameron|Open+Sans" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -22,14 +18,13 @@
 
 		<!--  ========== Section MAIN ========== -->
 
-
   		<main class="main wrapper">
 			<section class="userCity">
 			 	<input type="text" name="city" id="userCity" class="userCity__input" placeholder="Enter city name" >
 			 	<button id="submitCity" class="userCity__button">Search City</button>
 			</section>
   			<section id="weather" class="weather">
-  				<div id="temp" class="weather__temp"></div>
+  				<div id="temp"></div>
   				<dvi id="icon" class="weather__icon"></dvi>
   				<div id="description" class="weather__description"></div>
   				<div id="userCityName" class="weather__city"></div>
@@ -41,6 +36,7 @@
   		</main>
 
 		<!--  ========== Section FOOTER ========== -->
+
 		<footer class="page-footer">
 			<div class="wrapper">
 				<small>Copyright &copy; 2017  || Code by <a href="http://www.hiweb.pl">Hiweb.pl</a>|</small>

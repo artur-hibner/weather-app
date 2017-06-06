@@ -2525,17 +2525,17 @@ body {
 .header {
   font-family: "Rancho", cursive;
   font-size: 5rem;
-  color: #16A1A4;
+  color: #3A434C;
   line-height: 5rem;
   font-weight: 400;
   text-align: center;
-  padding: 40px;
+  padding: 40px 0 20px 0;
 }
 
 /* ========== MAIN SECTION ========== */
 .userCity {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 
 .userCity__input {
@@ -2612,6 +2612,14 @@ body {
 }
 
 .weather {
+  box-shadow: 0px 0px 68px 0px rgba(0, 0, 0, 0.75);
+}
+
+.weather__humidity, .weather__wind {
+  box-shadow: 0px 0px 68px 0px rgba(0, 0, 0, 0.75);
+}
+
+.weather {
   font-family: "Kameron", serif;
   font-size: 4rem;
   color: #FFFFFF;
@@ -2652,12 +2660,24 @@ body {
           align-items: center;
 }
 
+.weather__humidity p, .weather__wind p {
+  padding: 50px 0;
+}
+
 .weather__humidity {
   border-bottom-left-radius: 25px;
 }
 
+.weather__humidity span {
+  color: #0074D9;
+}
+
 .weather__wind {
   border-bottom-right-radius: 25px;
+}
+
+.weather__wind span {
+  color: #39CCCC;
 }
 
 .weather__icon, .weather__description, .weather__city {
@@ -2676,12 +2696,20 @@ body {
   font-size: 10rem;
 }
 
+.weather__icon p {
+  padding: 20px;
+}
+
 .weather__description {
   font-size: 3rem;
 }
 
 .weather__city {
   font-size: 2rem;
+}
+
+.weather__city p {
+  padding-bottom: 40px;
 }
 
 /* ========== FOOTER SECTION ========== */

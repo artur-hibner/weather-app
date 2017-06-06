@@ -33,8 +33,8 @@ body{
 }
 
 .header{
-    @include font-family($rancho, 5rem, #16A1A4, 5rem, 400);
+    @include font-family($rancho, 5rem, #3A434C, 5rem, 400);
     text-align: center;
-    padding: 40px;
+    padding: 40px 0 20px 0;
 
 }
