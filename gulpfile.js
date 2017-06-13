@@ -43,7 +43,7 @@ var
         in: source + 'scss/style.scss',
         outDev: destDev + 'css/',
         outProd: destProd + 'css/',
-        prefixMin: '.min' 
+        prefixMin: '' 
     },
 	fonts = {
 		in: source + 'fonts/*.*',
@@ -60,7 +60,7 @@ var
         outDev: destDev + 'js/',
         outProd: destProd + 'js/',
         filename: 'main.js',
-        prefixMin: '.min' 
+        prefixMin: '' 
     },
     syncOptsDev = {
         server: {

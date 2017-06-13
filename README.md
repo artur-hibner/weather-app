@@ -1,7 +1,7 @@
 ### Live demo  
 
 
-[LIVE DEMO] (https://artur-hibner.github.io/weather-app/dest/dev/)
+Temporary [LIVE DEMO] (http://hiweb.pl/weater-app/)
 
 ---------------
 ### Source ###
@@ -22,5 +22,5 @@ Folder: dest/prod
 ---------------
 
 ### Preview
-soon
-![picture alt](weather-app.jpg "Weather App")
+
+![picture alt](weather-app.png "Weather App")
